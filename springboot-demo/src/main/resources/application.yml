@@ -1,0 +1,25 @@
+machine.id: 001
+dir:
+  origin: /opt/soft/data/at/origin
+  temp: /opt/soft/data/at/temp
+  result: /opt/soft/data/at/result
+
+db:
+  url: jdbc:mysql://192.168.16.2:3306/serviceprovider?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+  user: mysql
+  password: 123456
+
+server:
+  port: 9000
+  servlet:
+    context-path: /myapp
+
+info:
+  app:
+    name: demo
+    version: 1.0
+spring:
+  servlet:
+    multipart:
+      max-file-size: 52428800
+      max-request-size: 52428800
